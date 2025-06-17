@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { now } from '../utils/timeShift.js';
+import { now } from '../utils/utils.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DB_PATH = join(dirname(__dirname), 'database.json');

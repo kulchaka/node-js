@@ -1,5 +1,5 @@
 import { getAll, create, updateById, deleteById, markDone } from '../models/habits.models.js';
-import { now } from '../utils/timeShift.js';
+import { now } from '../utils/utils.js';
 
 export const addHabit = async (payload) => {
   return create(payload);
